@@ -4,6 +4,8 @@ import java.io.IOException;
 
 public class MasterMind {
 	//CAMBIO--1
+	
+	//CAMBIO-PARA-SUBIR
 	private char [] combinacion;
 	private char [][] tablero;
 	private int [][] resultado;

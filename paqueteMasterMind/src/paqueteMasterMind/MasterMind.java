@@ -3,7 +3,7 @@ package paqueteMasterMind;
 import java.io.IOException;
 
 public class MasterMind {
-
+	//CAMBIO--1
 	private char [] combinacion;
 	private char [][] tablero;
 	private int [][] resultado;

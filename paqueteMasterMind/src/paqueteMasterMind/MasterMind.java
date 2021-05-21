@@ -6,6 +6,8 @@ public class MasterMind {
 	//CAMBIO--1
 	
 	//CAMBIO-PARA-SUBIR
+	
+	//ULTIMO--CAMBIO
 	private char [] combinacion;
 	private char [][] tablero;
 	private int [][] resultado;
@@ -93,30 +95,30 @@ pedirJugada (i);
 		}
 		System.out.println ();
 		if (acertada)
-			System.out.println ("¡ENHORABUENA! Has acertado la combinación en " + (i-1) +" intentos en la partida nº " + numPartidas);
+			System.out.println ("Â¡ENHORABUENA! Has acertado la combinaciÃ³n en " + (i-1) +" intentos en la partida nÂº " + numPartidas);
 		else
-			System.out.println ("LO SENTIMOS. No has conseguido acertar la combinación en la partida nº " + numPartidas);
+			System.out.println ("LO SENTIMOS. No has conseguido acertar la combinaciÃ³n en la partida nÂº " + numPartidas);
 	}
 	
 	private void pedirJugada (int j) throws IOException {
 		int i;
 		for (i=0; i<=4; i++) {
-			System.out.println ("Escribe la inicial del color número " + (i+1) +": ");
+			System.out.println ("Escribe la inicial del color nÃºmero " + (i+1) +": ");
 			tablero[j-1][i] = Consola.leeChar();
 		}
 	}
 	
 	private boolean comprobarJugada (int j) {
 		int i,k;
-	// Las siguientes 8 variables llevarán el número de muertos de cada color
+	// Las siguientes 8 variables llevarÃ¡n el nÃºmero de muertos de cada color
 		int numRM = 0, numVM = 0, numAM = 0, numBM = 0;
 		int numNM = 0, numMM = 0, numGM = 0, numSM = 0;
-	// Las siguientes 8 variables tendrán el número de piezas del mismo color
-	// que hay en la combinación a adivinar
+	// Las siguientes 8 variables tendrÃ¡n el nÃºmero de piezas del mismo color
+	// que hay en la combinaciÃ³n a adivinar
 		int numRComb = 0, numVComb = 0, numAComb = 0, numBComb = 0;
 		int numNComb = 0, numMComb = 0, numGComb = 0, numSComb = 0;
-	// Las siguientes 8 variables tendrán el número de piezas del mismo color
-	// que hay en la jugada que se está comprobando
+	// Las siguientes 8 variables tendrÃ¡n el nÃºmero de piezas del mismo color
+	// que hay en la jugada que se estÃ¡ comprobando
 		int numRJugada = 0, numVJugada = 0, numAJugada = 0, numBJugada = 0;
 		int numNJugada = 0, numMJugada = 0, numGJugada = 0, numSJugada = 0;
 		
